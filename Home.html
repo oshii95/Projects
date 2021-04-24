@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--to create a responsive website-->
+    <title>Home Page</title>
+
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <!-- linking theb stylesheet to the html  -->
+</head>
+
+<body>
+
+
+    <script src="Home.js"></script>
+
+    <!-- header start here  -->
+    <header class="hhhh">
+        <h1 id="main_header">Welcome to the fantacy world!</h1>
+        <div class="user">
+            <img src="\images\user-group-man-woman.png" alt="user_image">
+            <br>
+            <button class="button" id="btnReg" onclick="location.href='Register.html'">Register</button>
+            <button class="button" id="btnLogin" onclick="openform()">Log In</button>
+        </div>
+    </header>
+
+    <!-- header end here  -->
+
+    <!-- navigation bar starts here  -->
+    <ul>
+        <li><a class="active" href="#Home">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">chat room</a></li>
+    </ul>
+    <!-- navigation bar end here  -->
+
+    <!--<div id="nav">
+        <a href="Home.html">Home</a>
+        <a href="">About Us</a>
+        <a href="">chat box</a>
+    </div>  -->
+
+    <!-- web page content starts here -->
+
+    <div class="content1">
+        <h2 id="head2">Can be your self!</h2> <br>
+        <img id="img1" src="\images\0_TqCaIoiCjDrv-IOV.png" alt="self"><br><br><br>
+        <p id="para1">You can talk anyone with here and ask anthing what ever you are struggeling. this is for you!</p>
+    </div>
+
+    <br><br><br><br><br>
+    <div class="content2">
+        <h2 id="head3">People to share your thoughts!</h2><br>
+        <img id="img2" src="\images\share.jpg" alt="share"><br><br><br>
+        <p id="para2">You can talk anyone with here and ask anthing what ever you are struggeling. this is for you!</p>
+    </div>
+
+    <!-- web page content end here -->
+
+    <!-- log In form start here -->
+
+    <div id="login" class="loginmdl">
+        <form class="loginpopup animate" action="/action_page.php" method="POST">
+            <div class="imagecontainer">
+                <span onclick="document.getElementById('login').style.display='none'" class="closemdl">&items;</span>
+                <img src="images\unnamed.png" alt="user_image" class="avatar">
+            </div>
+            <div class="cont_login">
+                <label for="uname"><b>User Name</b></label>
+                <input type="text" placeholder="Enter username" name="uname" required>
+
+                <label for="pwd"><b>Password</b></label>
+                <input type="password" placeholder="Enter the password" name="pwd" required>
+
+                <button type="submit">Log In</button>
+                <label for="remember">
+                    <input type="checkbox" checked="checked" name="remember">Remember Me
+                </label>
+
+                <button type="button" onclick="document.getElementById(login).style.display='none'" class="btncansel">Cansel</button>
+                <span class="fpsw">Forget <a href="#"><b>Password?</b></a></span>
+            </div>
+
+    </div>
+    </form>
+    </div>
+
+    <!-- login form end here -->
+
+    <!-- footer starts here -->
+    <footer>
+        <p>People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do.</p><br><br>
+        <img src="images\BSys-Smile.jpg" alt="smile">
+    </footer>
+    <!-- footer end here -->
+
+
+    <script>
+        function openform() {
+            document.getElementById(login).style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
